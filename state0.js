@@ -13,26 +13,26 @@ game.load.spritesheet('skunk', 'skunk.png');
     },
     
     create: function(){
-//        game.world.setBounds(0,0,2183,1000);
-//        game.physics.startSystem(Phaser.Physics.ARCADE);
+       game.world.setBounds(0,0,2183,1000);
+       game.physics.startSystem(Phaser.Physics.ARCADE);
     
    var bg = game.add.sprite(0, 0, 'city');  
      bg.height = game.height;
      bg.width = game.width;
         
-    skunk = game.add.sprite(0, 200, 'skunk');
+    skunk = game.add.sprite(0, 600, 'skunk');
         
-//        game.physics.enable(skunk);
-//       
-//        skunk.body.gravity.y = 600;
-//    
-//        skunk.body.collideWorldBounds = true;
-//        
-//        skunk.scale.setTo(4,4);
-//     
-//        skunk.animations.add("walk", [0,1,2,3]);
-//        
-//        cursors = game.input.keyboard.createCursorKeys();
+        game.physics.enable(skunk);
+      
+      skunk.body.gravity.y = 600;
+   
+        skunk.body.collideWorldBounds = true;
+        
+        skunk.scale.setTo(4,4);
+     
+        skunk.animations.add("walk", [0,1,2,3]);
+      
+       cursors = game.input.keyboard.createCursorKeys();
       
     }
     
